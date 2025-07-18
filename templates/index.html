@@ -1,0 +1,950 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home - The Journey Of A Widow</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/logo (3).png' %}" rel="icon">
+  <link href="{% static 'img/logo (3).png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">The Journey<br> Of A Widow</h1>
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#header" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Life Stories</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Programs</a></li>
+          <li class="dropdown"><a href="#"><span>Find More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Management</a></li>
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#">Join Us</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{% static 'img/background.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-6 col-lg-8">
+            <h2>Empowering Our Widows,
+                <br>
+                One Step at a Time<span>.</span></h2>
+            <p>Join us in our mission to uplift and empower widows in Bungoma County.
+                <br>
+                Together, we can create lasting change and provide the support they need.</p>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+    <div class="icon-box">
+      <i class="bi bi-people-fill"></i>
+      <h3><a href="">Community Support</a></h3>
+    </div>
+  </div>
+   <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+    <div class="icon-box">
+      <i class="bi bi-hammer"></i>
+      <h3><a href="">Advocacy</a></h3>
+    </div>
+  </div>
+  <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+    <div class="icon-box">
+      <i class="bi bi-heart-pulse-fill"></i>
+      <h3><a href="">Emotional Healing</a></h3>
+    </div>
+  </div>
+  <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+    <div class="icon-box">
+      <i class="bi bi-lightbulb"></i>
+      <h3><a href="">Empowerment</a></h3>
+    </div>
+  </div>
+  <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+    <div class="icon-box">
+      <i class="bi bi-journal-richtext"></i>
+      <h3><a href="">Awareness Campaigns</a></h3>
+    </div>
+  </div>
+</div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+<section id="about" class="about section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img src="{% static 'img/aboutscreen.jpg' %}" class="img-fluid" alt="The Journey of a Widow">
+      </div>
+      <div class="col-lg-6 order-2 order-lg-1 content">
+        <h3>About The Journey of a Widow</h3>
+        <p class="fst-italic">
+          We are a community-driven initiative committed to walking with widows through healing, empowerment, and hope.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-all"></i> <span>Providing emotional support, counseling, and a safe space to grieve and grow.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Organizing empowerment programs and training to promote self-reliance.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Raising awareness and advocating for widows’ rights, dignity, and inclusion in society.</span></li>
+        </ul>
+        <p>
+          Through workshops, events, and outreach, we strive to create a world where no widow walks alone. Our mission is rooted in compassion, strength, and the belief that healing begins with connection and community.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+
+    <!-- Partners Section -->
+<section id="clients" class="clients section" style="background-color: #f9f9f9; padding: 60px 0;">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Section Title -->
+    <div class="section-title text-center mb-5">
+      <h2 class="text-success">Our Partners in Hope</h2>
+      <p>We are grateful to the organizations and individuals who walk this journey with us.</p>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 4000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 2,
+              "spaceBetween": 20
+            },
+            "640": {
+              "slidesPerView": 4,
+              "spaceBetween": 40
+            },
+            "992": {
+              "slidesPerView": 6,
+              "spaceBetween": 60
+            }
+          }
+        }
+      </script>
+
+      <div class="swiper-wrapper align-items-center">
+
+        <!-- Replace these with meaningful partners or sponsors -->
+        <div class="swiper-slide">
+          <img src="{% static 'img/partners/patner-1.png' %}" class="img-fluid" alt="Hope Foundation">
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/partners/patner-2.png' %}" class="img-fluid" alt="Widow Support Network">
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/partners/patner-3.png' %}" class="img-fluid" alt="Empower Africa">
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/partners/patner-4.png' %}" class="img-fluid" alt="Healing Hands Kenya">
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/partners/patner-5.png' %}" class="img-fluid" alt="Faith & Family Trust">
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/partners/patner-6.png' %}" class="img-fluid" alt="Community Uplift Org">
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Features Section -->
+<section id="features" class="features section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+      <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="{% static 'img/feature.jpg' %}" alt="Empowering Widows">
+      </div>
+      <div class="col-lg-6">
+
+        <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-people flex-shrink-0"></i>
+          <div>
+            <h4>Support Groups</h4>
+            <p>We offer emotional support circles and peer mentorship to help widows share, heal, and grow together.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-lightbulb flex-shrink-0"></i>
+          <div>
+            <h4>Skills Training</h4>
+            <p>Our vocational and entrepreneurship programs equip widows with skills to become self-reliant and financially empowered.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-megaphone flex-shrink-0"></i>
+          <div>
+            <h4>Advocacy & Awareness</h4>
+            <p>We raise awareness about the rights and needs of widows, working to end stigma and discrimination in society.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <i class="bi bi-calendar-heart flex-shrink-0"></i>
+          <div>
+            <h4>Community Events</h4>
+            <p>We organize regular events, workshops, and outreach missions to bring widows together and celebrate resilience.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Features Section -->
+
+
+    <!-- Programs Section -->
+<section id="programs" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Programs Offered</h2>
+    <p>Explore the Programs We Offer</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-book"></i>
+          </div>
+          <h3>Widow Empowerment Workshops</h3>
+          <p>Interactive sessions focused on personal development, healing, and rebuilding self-confidence among widows.</p>
+        </div>
+      </div><!-- End Program Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-heart-pulse"></i>
+          </div>
+          <h3>Mental Health & Counseling</h3>
+          <p>Access to group and individual therapy sessions with trained counselors to support emotional well-being.</p>
+        </div>
+      </div><!-- End Program Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-cash-stack"></i>
+          </div>
+          <h3>Financial Literacy Training</h3>
+          <p>Programs designed to help widows manage personal finances, savings, and business budgeting skills.</p>
+        </div>
+      </div><!-- End Program Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-bag-check"></i>
+          </div>
+          <h3>Entrepreneurship Support</h3>
+          <p>Helping widows start or grow small businesses through mentorship, training, and startup kits.</p>
+        </div>
+      </div><!-- End Program Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-people"></i>
+          </div>
+          <h3>Community Support Groups</h3>
+          <p>Peer-led gatherings for shared experiences, encouragement, and empowerment through sisterhood.</p>
+        </div>
+      </div><!-- End Program Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-calendar-event"></i>
+          </div>
+          <h3>Legal Awareness Seminars</h3>
+          <p>Training and awareness on inheritance rights, property laws, and legal protection for widows.</p>
+        </div>
+      </div><!-- End Program Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Programs Section -->
+
+
+    <!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+
+  <img src="{% static 'img/calltoaction.jpg' %}" alt="Join Our Mission Background">
+
+  <div class="container">
+    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-10">
+        <div class="text-center">
+          <h3>Stand With Widows. Be the Change.</h3>
+          <p>Every widow deserves a chance to heal, grow, and thrive. Your support can help transform grief into hope, silence into strength, and loneliness into community. Join us in empowering lives today.</p>
+          <a class="cta-btn" href="#donate">Donate Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Call To Action Section -->
+
+
+
+    <!-- Stories of Strength Section -->
+<section id="stories" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Stories of Strength</h2>
+    <p>Stories Of Strength</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <!-- Filters -->
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-healing">Healing</li>
+        <li data-filter=".filter-empowerment">Empowerment</li>
+        <li data-filter=".filter-enterprise">Entrepreneurship</li>
+      </ul><!-- End Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Healing Program -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-healing">
+          <img src="{% static 'img/healing1.jpg' %}" class="img-fluid rounded shadow" alt="Healing Support">
+          <div class="portfolio-info bg-light p-3 rounded">
+            <h4 class="text-primary">Grief Counseling & Healing Circles</h4>
+            <p>Offering emotional and psychological support through trained counselors and peer groups. <br><em>Mary, a young widow, once said: "I thought my world had ended until I joined a healing circle. For the first time, I felt seen, heard, and understood."</em></p>
+            <a href="{% static 'img/healing1.jpg' %}" title="Healing Program" data-gallery="portfolio-gallery-healing" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="#" title="Learn More" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <!-- Empowerment Program -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-empowerment">
+          <img src="{% static 'img/empowerment1.jpg' %}" class="img-fluid rounded shadow" alt="Empowerment Workshops">
+          <div class="portfolio-info bg-light p-3 rounded">
+            <h4 class="text-success">Empowerment & Leadership Training</h4>
+            <p>Building confidence and leadership skills so widows can advocate for themselves and others. <br><em>Jane never saw herself as a leader until she stood in front of a community forum, trained and empowered to speak with boldness.</em></p>
+            <a href="{% static 'img/empowerment1.jpg' %}" title="Empowerment Program" data-gallery="portfolio-gallery-empowerment" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="#" title="Learn More" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <!-- Enterprise Program -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-enterprise">
+          <img src="{% static 'img/enterprise1.jpg' %}" class="img-fluid rounded shadow" alt="Entrepreneurship">
+          <div class="portfolio-info bg-light p-3 rounded">
+            <h4 class="text-warning">Business & Skills Development</h4>
+           <p>Training widows in soap making, tailoring, and other income-generating activities. <br><em>After losing everything, Sarah started her own soap business through our training. Today, she supports her children and mentors other widows.</em></p>
+            <a href="{% static 'img/enterprise1.jpg' %}" title="Enterprise Program" data-gallery="portfolio-gallery-enterprise" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="#" title="Learn More" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <!-- Additional Program -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-healing">
+          <img src="{% static 'img/healing2.jpg' %}" class="img-fluid rounded shadow" alt="Community Events">
+          <div class="portfolio-info bg-light p-3 rounded">
+            <h4 class="text-primary">Community Bonding Events</h4>
+           <p>Monthly meetups, picnics, and shared meals that foster unity and healing among widows. <br><em>“When we gather and share meals, I feel like I have a family again,” says Beatrice, who lost both husband and home but found hope in our events.</em></p>
+            <a href="{% static 'img/healing2.jpg' %}" title="Community Program" data-gallery="portfolio-gallery-healing" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="#" title="Learn More" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+      </div><!-- End Program Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Programs Offered Section -->
+
+    <!-- Stats Section -->
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 align-items-center justify-content-between">
+
+      <div class="col-lg-5">
+        <img src="{% static 'img/statimage.jpg' %}" alt="" class="img-fluid rounded shadow">
+      </div>
+
+      <div class="col-lg-6">
+
+        <h3 class="fw-bold fs-2 mb-3">Our Journey in Numbers</h3>
+        <p>
+            Every number tells a story of courage, hope, and healing. Through the power of community, <b>The Journey of a Widow</b> continues to support, uplift, and empower women who thought they had lost everything. We are proud of the lives we’ve touched — and the future we are still building together.
+        </p>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="bi bi-emoji-smile flex-shrink-0 text-success"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="650" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Widows Empowered</strong> <span>through our healing programs</span></p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="bi bi-journal-richtext flex-shrink-0 text-primary"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Workshops Held</strong> <span>on healing, rights, and livelihoods</span></p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="bi bi-headset flex-shrink-0 text-warning"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="2500" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Support Hours</strong> <span>offered through counseling and peer groups</span></p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="bi bi-people flex-shrink-0 text-danger"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Community Volunteers</strong> <span>dedicated to our mission</span></p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section dark-background">
+
+  <img src="{% static 'img/testimonialsbg.jpg' %}" class="testimonials-bg" alt="">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <!-- Emotional Life Story -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+            <h3>Grace Wanjiku</h3>
+            <h4>Beneficiary, Widow Empowerment Program</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                I lost my husband in 2019. Life became dark, and I had no idea how I’d raise my three children alone. The Journey of a Widow gave me hope again. Through their support programs, I started a small tailoring business. Today, I can feed my children, send them to school, and walk with pride. This organization didn’t just help me survive — it helped me live again.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <!-- Other Testimonials -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+            <h3>Sarah Achieng</h3>
+            <h4>Volunteer</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                Working with this organization has been one of the most fulfilling experiences of my life. I’ve seen lives transformed, women regain confidence, and communities grow stronger. It’s more than charity — it’s a movement of healing and hope.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+            <h3>Pastor Peter Mwangi</h3>
+            <h4>Community Leader</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                This initiative has restored dignity to many in our village. The widow support programs are thoughtful, practical, and deeply impactful. As a community, we are stronger because of it.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+            <h3>Esther Njeri</h3>
+            <h4>Program Trainer</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                I’ve trained dozens of widows in soap making and beadwork. Every time a woman graduates and starts earning, I know we are building a future where no one is left behind.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+            <h3>James Otieno</h3>
+            <h4>Donor & Partner</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                Supporting this organization has been an honor. The transparency, impact, and love they put into everything they do is unmatched. I’m proud to stand with them.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+
+   <!-- Team Section -->
+<section id="team" class="team section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Meet Our Team</h2>
+    <p>Driven by Compassion, United by Purpose</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <!-- Emotional Story Introduction -->
+    <div class="row mb-5">
+      <div class="col text-center" data-aos="fade-up">
+        <p class="fs-5 fst-italic text-muted">
+          “After losing my husband unexpectedly, I was left with nothing but grief, confusion, and four children to care for.
+          I didn’t know where to begin. But one visit to this organization changed everything.
+          Today, I’m not just surviving — I’m thriving, and I now serve to uplift others walking the same painful journey.”<br>
+          <strong>————— Margaret Nasimiyu, Founder & Visionary ——————</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'img/team1.jpg' %}" class="img-fluid" alt="Founder">
+            <div class="social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Margaret Nasimiyu</h4>
+            <span>Founder & Visionary</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'img/team2.jpg' %}" class="img-fluid" alt="Programs Lead">
+            <div class="social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Grace Atieno</h4>
+            <span>Programs Coordinator</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'img/team5.jpg' %}" class="img-fluid" alt="Community Outreach">
+            <div class="social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Peter Wanjala</h4>
+            <span>Community Outreach Lead</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'img/team4.jpg' %}" class="img-fluid" alt="Admin & Finance">
+            <div class="social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Esther Chebet</h4>
+            <span>Finance & Administration Officer</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+<section id="contact" class="contact section" style="position: relative; padding: 60px 0;">
+
+  <!-- Background Image -->
+  <div style="
+    background: url('{% static 'img/background.jpg' %}') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+    opacity: 0.25; /* Dim the image to improve text contrast */
+  "></div>
+
+  <!-- Foreground Content -->
+  <div class="container section-title text-center" data-aos="fade-up" style="position: relative; z-index: 2;">
+    <h2 style="color: #2e7d32;">We'd Love to Hear From You</h2>
+    <p>Your story matters — let's walk this journey together.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100" style="position: relative; z-index: 2;">
+
+    <!-- Inspiring Quote -->
+    <div class="text-center mb-4" style="font-style: italic; color: #4e4e4e;">
+      <p>"Sometimes, just knowing someone is listening makes all the difference."</p>
+    </div>
+
+    <div class="row gy-4">
+
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt-fill text-success fs-4 me-3"></i>
+          <div>
+            <h5>Our Office</h5>
+            <p>Kitale Road, Bungoma Town, Kenya</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone-fill text-success fs-4 me-3"></i>
+          <div>
+            <h5>Phone</h5>
+            <p>+254 712 345 678</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope-fill text-success fs-4 me-3"></i>
+          <div>
+            <h5>Email</h5>
+            <p>support@thejourneyofawidow.org</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <form action="#" method="post" class="php-email-form p-4 shadow-sm rounded bg-white" data-aos="fade-up" data-aos-delay="500">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+
+            <div class="col-md-12">
+              <textarea name="message" class="form-control" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Sending...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you for reaching out 💚</div>
+              <button type="submit" class="btn btn-success px-4 py-2">Send Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer id="footer" class="footer" style="background: url('{% static 'img/background.jpg' %}') no-repeat center center; background-size: cover; color: #fff;">
+
+  <div class="footer-top py-5" style="background-color: rgba(0,0,0,0.6);">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- About -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="/" class="logo d-flex align-items-center mb-3">
+            <img src="{% static 'img/logo (3).png' %}" alt="Logo" height="40" style="margin-right: 10px;">
+            <span class="sitename" style="font-size: 1.5rem; font-weight: bold;">The Journey of a Widow</span>
+          </a>
+          <p style="line-height: 1.8;">
+            We walk with widows through grief, growth, and renewal—offering hope, healing, and the strength of a united community.
+          </p>
+          <div class="footer-contact pt-3">
+            <p><strong>Location:</strong> Bungoma, Kenya</p>
+            <p><strong>Email:</strong> <a href="mailto:info@widowsjourney.org" style="color: #fff;">info@widowsjourney.org</a></p>
+            <p><strong>Phone:</strong> +254 712 345678</p>
+          </div>
+          <div class="social-links d-flex mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/about/">About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/events/">Events</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/donate/">Donate</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/contact/">Contact</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/contact/">Volunteer</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Programs Offered</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Grief Counseling</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Financial Empowerment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Legal Aid</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Widow Support Circles</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Child Education Help</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Join Our Journey</h4>
+          <p>
+            Be a part of the healing. Receive stories of courage, updates on our outreach, and ways you can support the widows walking this journey.
+          </p>
+          <form action="#" method="post" class="php-email-form">
+            <div class="newsletter-form d-flex">
+              <input type="email" name="email" placeholder="Your email">
+              <input type="submit" value="Subscribe">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Thank you for subscribing to hope 💌</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright py-3" style="background-color: rgba(0,0,0,0.8);">
+    <div class="container text-center">
+      <p>&copy; 2025 <strong class="sitename">The Journey of a Widow</strong>. <br>All Rights Reserved.</p>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
